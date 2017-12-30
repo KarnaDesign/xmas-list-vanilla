@@ -9,9 +9,9 @@
 
 <body>
     <div class="wrapper">
-        <h2>Skapa önskelista</h2>
-        <div class="form">
-            <form id="userInformation">
+        <div class="listCreator">
+            <h2>Skapa önskelista</h2>
+            <form id="nameInfo">
                 <p>
                     <input type="text" id="name" placeholder="Ditt namn" />
                 </p>
@@ -21,8 +21,17 @@
             </form>
         </div>
 
-        <div class="wishlist">
-
+        <div class="wishlistCreator hidden">
+            <!-- Get name of listowner -->
+            <h2>
+                <span id="name"></span> önskelista
+            </h2>
+            <p>Fyll i det du önskar dig i listan nedan och rangordna genom att dra dina önskemål till rätt plats i listan.</p>
+            <ul id="wishlist">
+                <li class="input">
+                    <input type="text" class="wishlistItem" placeholder="Lägg till en önskning" />
+                </li>
+            </ul>
         </div>
     </div>
 
