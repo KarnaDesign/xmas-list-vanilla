@@ -10,8 +10,8 @@ body {
     text-align: center;
     .wrapper {
         display: inline-block;
-        background-color: #FFFFFF;
-        background-color: rgba(255, 255, 255, 0.95);
+        /*background-color: #FFFFFF;
+        background-color: rgba(255, 255, 255, 0.95);*/
         margin-top: 5rem;
         padding: 2rem 1rem;
         .hidden {
@@ -22,6 +22,92 @@ body {
             text-transform: uppercase;
             margin-top: 3rem;
             margin-bottom: 5rem;
+            color: #507532;
+            font-family: 'Kaushan Script', cursive;
+        }
+        #nameInfo {
+            p {
+                input {
+                    width: 20rem;
+                    height: auto;
+                    padding: 1rem;
+                    margin-bottom: 2.5rem;
+                    outline: none;
+                    &::placeholder {
+                        font-style: italic;
+                    }
+                }
+            }
+            p {
+                button {
+                    padding: 0.8rem;
+                    background-color: #507532;
+                    color: #FFFFFF;
+                    font-weight: bold;
+                    border: none;
+                    cursor: pointer;
+                    outline: none;
+                }
+            }
+        }
+        .wishlistCreator {
+            h2 {
+                margin-bottom: 3rem;
+            }
+            p {
+                margin-bottom: 4rem;
+                font-style: italic;
+                font-weight: bold;
+                color: #507532;
+                font-size: 1.1rem;
+            }
+            ul {
+                list-style-type: none;
+                background-color: rgba(255, 255, 255, 0.4);
+                padding: 2rem 0.5rem;
+                li {
+                    color: #c90018;
+                    margin-bottom: 1rem;
+                    font-size: 1.5rem;
+                    font-family: 'Neucha', cursive;
+                    font-weight: bold;
+                    &:not(.input) {
+                        background-color: rgba(255, 255, 255, 0.6);
+                        border: 1px solid #FFFFFF;
+                        border-radius: 4px;
+                        padding: 0.5rem 0;
+                        margin-bottom: 0.25rem;
+                        width: 20rem;
+                        margin-left: auto;
+                        margin-right: auto;
+                        cursor: pointer;
+                        position: relative;
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.8);
+                            .fa-trash {
+                                opacity: 1;
+                            }
+                        }
+                        .fa-trash {
+                            position: absolute;
+                            right: 0.5rem;
+                            opacity: 0.1;
+                        }
+                    }
+                    input {
+                        border: none;
+                        background-color: transparent;
+                        font-size: 1.3rem;
+                        color: rgba(201, 0, 24, 1);
+                        text-align: center;
+                        outline: none;
+                        &::placeholder {
+                            font-style: italic;
+                            color: rgba(201, 0, 24, 0.5);
+                        }
+                    }
+                }
+            }
         }
     }
 }
