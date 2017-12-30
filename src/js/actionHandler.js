@@ -23,6 +23,9 @@ export function handleAddWishItem(e) {
         newListitem.appendChild(textSpan);
         const deleteSpan = document.createElement("span");
         deleteSpan.className = "fa fa-trash";
+        deleteSpan.addEventListener("click", () => {
+            ul.removeChild(newListitem);
+        });
         newListitem.appendChild(deleteSpan);
         ul.appendChild(newListitem);
 
