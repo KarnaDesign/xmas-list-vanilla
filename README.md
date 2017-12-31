@@ -1,6 +1,7 @@
 # XMAS-LIST-VANILLA
 
-A Christmas wishlist made in javascript, without additional libraries.
+A Christmas wishlist made in JavaScript, without additional libraries. 
+The idea of this demo is to make the same application in vanilla JavaScript, jQuery and React as I am learning to use es6 and beyond.
 
 ## HOW TO RUN IT
 
@@ -10,5 +11,5 @@ Run `npm install`.
 
 Run `npm run build`.
 
-Open index.html found in the build-folder.
+Open index.html to launch the page.
 
