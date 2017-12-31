@@ -9,7 +9,13 @@ Start off by cloning this repository.
 
 Run `npm install`.
 
-Run `npm run build`.
+If you are developing, run:
+`npm run build`.
+
+If you want to run the site, run:
+`npm run release`
+
+
 
 Open index.html in the build directory to launch the page.
 
