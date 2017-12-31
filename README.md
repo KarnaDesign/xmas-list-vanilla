@@ -11,5 +11,5 @@ Run `npm install`.
 
 Run `npm run build`.
 
-Open index.html to launch the page.
+Open index.html in the build directory to launch the page.
 
